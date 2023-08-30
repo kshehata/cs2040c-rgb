@@ -15,3 +15,7 @@ void RGB::print() {
   std::cout << "RGB(" << red_ << ", " << green_ << ", " << blue_ << ")"
     << std::endl;
 }
+
+bool RGB::operator==(const RGB& other) const {
+  return red_ == other.red_ && green_ == other.green_ && blue_ == other.blue_;
+}

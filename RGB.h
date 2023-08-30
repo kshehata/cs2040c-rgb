@@ -15,6 +15,9 @@ public:
   int green() const { return green_; }
   int blue() const { return blue_; }
 
+  bool operator==(const RGB& other) const;
+  bool operator!=(const RGB& other) const { return !(*this == other); }
+
   void print();
 };
 

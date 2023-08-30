@@ -24,4 +24,16 @@ TEST(RGBTest, Print) {
   rgb.print();
 }
 
+TEST(RGBTest, Equals) {
+  RGB rgb1(1, 2, 3);
+  RGB rgb2(1, 2, 3);
+  EXPECT_EQ(rgb1, rgb2);
+}
+
+TEST(RGBTest, NotEquals) {
+  RGB rgb1(1, 2, 3);
+  RGB rgb2(1, 2, 4);
+  EXPECT_NE(rgb1, rgb2);
+}
+
 }  // namespace testing
