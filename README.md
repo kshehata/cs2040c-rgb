@@ -2,17 +2,29 @@
 
 This repo provides skeleton code for an example RGB class. You will use this as the basis for implementing operator overloading.
 
-## Building
+## Installation of CMake
 
-If you have [CMake](https://cmake.org/) building is easy:
+For MacOS, you can install CMake using [brew](https://formulae.brew.sh/formula/cmake).
 
 ```bash
-mkdir build && cd build
-cmake ..
-make
+brew install cmake
 ```
 
-TODO: add instructions for MSVC and XCode
+## Setup
+
+1. Clone the project.
+2. Enter the root directory.
+3. Execute CMake to install the necessary dependencies.
+4. Execute make to build all the files.
+5. Execute `make test` to run the test.
+
+```bash
+git clone https://github.com/kshehata/cs2040c-rgb.git
+cd CS2040C-RGB
+cmake CMakeLists.txt
+make
+make test
+```
 
 ## Unit Tests
 

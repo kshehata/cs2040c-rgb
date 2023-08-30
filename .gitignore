@@ -33,3 +33,15 @@ build/
 *.exe
 *.out
 *.app
+
+# Created when executing CMake
+_deps
+bin
+CMakeFiles
+lib
+Testing
+cmake_install.cmake
+CMakeCache.txt
+CTestTestfile.cmake
+Makefile
+rgb_test
